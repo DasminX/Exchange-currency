@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hubballi", cursive;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: black;
+}
+
+.wrapper {
+  padding: 5rem;
+  width: 40%;
+  height: 50vh;
+  background-image: linear-gradient(#411c0c, #544a09);
+  color: white;
+  text-align: center;
+  border: 0.1rem solid #544a09;
+  border-radius: 1rem;
+  box-shadow: 0 0 2rem #411c0c;
+}
+
+h1 {
+  font-size: 6rem;
+  margin-bottom: 2rem;
+}
+
+p {
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+}
+
+.app-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-left,
+.section-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  margin: 0.75rem;
+  width: 100%;
+  font-size: 8rem;
+}
+
+input,
+select {
+  color: white;
+  border: none;
+  background: none;
+  text-align: center;
+}
+
+select {
+  padding: 1rem 3rem;
+  font-size: 2.6rem;
+  cursor: pointer;
+}
+
+.section-left:focus,
+.section-right:focus {
+  outline: none;
+  border: 2px solid #3498db;
+}
+
+option {
+  color: black;
+}
+
+.swap {
+  align-self: flex-end;
+  margin: 1rem;
+  padding: 1.4rem 6rem;
+  background-image: linear-gradient(45deg, #544a09, white, #544a09);
+  border: none;
+  border-radius: 1rem;
+  color: black;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.rate-info {
+  margin-top: 2rem;
+  font-size: 2rem;
+  word-spacing: 0.3rem;
+}

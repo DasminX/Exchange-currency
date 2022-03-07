@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exchange</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Hubballi&display=swap");
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Exchange</h1>
+      <p>Aktualne kursy walut:</p>
+
+      <div class="app-body">
+        <div class="section-left">
+          <input
+            type="number"
+            class="amount-one"
+            value="1"
+            min="0.01"
+            step="0.01"
+          />
+          <select id="currency-one">
+            <option value="PLN">PLN</option>
+            <option value="USD">USD</option>
+            <option value="GBP">GBP</option>
+            <option value="EUR">EUR</option>
+            <option value="CHF">CHF</option>
+          </select>
+        </div>
+        <button class="swap">
+          <i class="fas fa-infinity"></i>
+        </button>
+        <div class="section-right">
+          <input type="number" class="amount-two" />
+          <select id="currency-two">
+            <option value="PLN">PLN</option>
+            <option value="USD" selected>USD</option>
+            <option value="GBP">GBP</option>
+            <option value="EUR">EUR</option>
+            <option value="CHF">CHF</option>
+          </select>
+        </div>
+      </div>
+      <div class="rate-info"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
